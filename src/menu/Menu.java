@@ -13,18 +13,21 @@ public class Menu {
         for(String item : items){
             System.out.println(index++ + ". " + item);
         }
+        System.out.println();
     }
     public static void print_new_account_details(){
         List<String> required_details = new ArrayList<>();
-        required_details.add("PAN Card");
-        required_details.add("Aadhaar Card");
-        required_details.add("Photo Card");
-        required_details.add("Cell_Phone Card");
+        required_details.add("Account Number");
+        required_details.add("Password");
+        required_details.add("Amount");
+        required_details.add("Name");
+        required_details.add("Type of the Account");
         required_details.add("Exit...");
         int index = 1;
         for(String str:required_details){
             System.out.println(index++ +" "+str);
         }
+        System.out.println();
     }
     public static  void print_user_Account_details(){
         List<String> choices = new ArrayList<>();
@@ -37,6 +40,7 @@ public class Menu {
         for(String str:choices){
             System.out.println(index++ +" "+str);
         }
+        System.out.println();
     }
 
 }
