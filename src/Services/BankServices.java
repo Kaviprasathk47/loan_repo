@@ -1,13 +1,8 @@
 package Services;
-import userDetails.BankAmountDetails;
-import ErrorHandlers.InvalidAmount;
+import model.User;
+import model.Account;
 public class BankServices {
-    public int checkBalance() throws InvalidAmount{
-        BankAmountDetails services = new BankAmountDetails();
-        return services.checkBalance();
-    }
-    public void deposit(){
-
-    }
-    public void debit(){}
+    public void checkBalance(){}
+    public void creditAmount(){}
+    public void debitAmount(){}
 }
